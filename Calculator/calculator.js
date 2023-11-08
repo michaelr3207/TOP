@@ -1,7 +1,7 @@
 console.log('testtsstst');
 
 
-// this is a test comment 
+// this is a test comment, new line
 
 function inputNumber1(number){
     const output = document.getElementById("output");
