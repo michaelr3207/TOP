@@ -1,0 +1,140 @@
+<style>
+
+    *{
+        box-sizing: border-box;
+        background: linear-gradient(43deg, aqua, #0048ff);
+    }
+    .container{
+        background: lightcyan;
+
+
+        display: flex;
+        width: 70%;
+        margin: auto;
+        margin-top: 100px;
+        height: 800px;
+    }
+
+    .leftBox{
+        background: lightcyan;
+
+        padding: 20px;
+        width: 30%;
+    }
+
+    .leftBox img{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .leftBox h1{
+        background: lightcyan;
+        text-align: center;
+    }
+
+    .rightBox{
+
+        width: 70%;
+        display: flex;
+        background: lightgray;
+
+    }
+
+    .firstCol{
+        background: lightcyan;
+
+        padding: 30px;
+        display: block;
+        height: 30%;
+        width: 35%;
+        margin-top: 150px;
+        margin-left: 100px;
+
+    }
+
+    .secondCol{
+        background: lightcyan;
+
+
+        padding: 30px;
+        display: block;
+        height: 30%;
+        width: 35%;
+        margin-top: 150px;
+
+    }
+
+    form{
+        background: aliceblue;
+        margin-top: 30px;
+    }
+
+    input{
+        background: aliceblue;
+
+        border-radius: 5px;
+    }
+
+    label{
+        background: aliceblue;
+        text-decoration: underline;
+
+    }
+
+    .submitB{
+        background: lightcyan;
+        
+        text-align: center;
+        width: 70%;
+        margin-left: 217px;
+        height: 60px;
+        padding: 15px;
+    }
+
+    .buttonSub{
+        background: green;
+
+        width: 30%;
+        height: 120%;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<div class="container">
+    <div class="leftBox">
+        <h1>This is a gof</h1>
+        <img  alt="woof" src="../images/dog.jpg">
+    </div>
+    <div class="rightBox">
+        <div class="firstCol">
+            <form action="/action_page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+            </form>
+        </div>
+        <div class="secondCol">
+            <form action="/action_page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+            </form>
+        </div>
+    </div>
+
+</div>
+<div class="submitB">
+    <button class="buttonSub">SUBMIT</button>
+</div>
+
+</body>
+</html>

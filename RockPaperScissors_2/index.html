@@ -1,0 +1,247 @@
+<style>
+
+  body{
+    background: #343434;
+  }
+
+  .main{
+    height: 100%;
+    width: 85%;
+    margin: auto;
+  }
+
+  .header{
+    border: 2px solid aliceblue;
+    height: 10%;
+    width: auto;
+    display: flex;
+    background: black;  }
+
+  .headerTitle{
+    border: 1px solid black;
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 70px;
+    font-family: cursive;
+    color: gold;
+    margin-left: 450px;
+  }
+
+  .headerBtn{
+    border: 2px solid aliceblue;
+    height: 90%;
+    width: 5%;
+  }
+
+  .headerBtn button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: #8f1919;
+    color: #E5E7EB;
+    font-size: 20px;
+  }
+  .headerBtn button:hover{
+    background: green;
+    text-decoration: underline;
+  }
+
+  .mainBody{
+    border: 2px solid aliceblue;
+    height: 79%;
+    display: flex;
+  }
+
+  .leftPillar{
+    border: 3px solid white;
+    width: 10%;
+    height:100%;
+    background: black;
+  }
+
+  .btnOptions{
+    border: 2px solid aliceblue;
+    height: 10%;
+    width: 100%;
+    margin: auto;
+    background: black;
+  }
+
+  .imgBox{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+  }
+
+  .rightPillar{
+    border: 3px solid white;
+    width: 10%;
+    height:100%;
+    background: black;
+  }
+
+  .img{
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 33%;
+    height: 100%;
+    -webkit-box-shadow: 12px 10px 43px 24px #000000;
+    box-shadow: 12px 10px 43px 24px #000000;
+  }
+
+  .optionBtns{
+    border: 1px solid white;
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    background: black;
+    margin-top: 20px;
+    display: flex;
+  }
+  h1{
+    font-size: 100px;
+    text-align: center;
+    margin-top: 200px;
+    font-family: cursive;
+    color: gold;
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .optBtn{
+    width: 28%;
+    height: 60%;
+    margin: inherit;
+    border: 2px solid aliceblue;
+    border-radius: 30%;
+    background: #095209;
+    color: gold;
+    font-size: 28px;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .gameOverScreen{
+    border: 1px solid white;
+    width: 100%;
+    display: flex;
+    height:79%;
+  }
+  .gameOverScreen img{
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .footer{
+    border: 2px solid white;
+    height: 10%;
+    width: 85%;
+    margin: auto;
+    background: black;
+  }
+
+  .scores{
+    border: 2px solid black;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    -webkit-box-shadow: 12px 10px 43px 24px #000000;
+    box-shadow: 12px 10px 43px 24px #000000;
+  }
+
+  .plyScore{
+    /*border: 2px solid greenyellow;*/
+    height: 100%;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-family: cursive;
+    font-size: 45px;
+    color: greenyellow;
+  }
+
+  .compScore{
+    /*border: 2px solid greenyellow;*/
+    height: 100%;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-family: cursive;
+    font-size: 45px;
+    color: red;
+  }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="headerTitle" id="header">
+      Rock Paper Scissors
+    </div>
+    <div class="headerBtn">
+      <button onclick="reset()">Restart</button>
+    </div>
+  </div>
+  <div class="btnOptions" id="btnRow">
+    <div class="optionBtns">
+      <button id="selectBtn1" onclick="selectChoice('rock')" class="optBtn">Rock</button>
+      <button id="selectBtn2" onclick="selectChoice('paper')" class="optBtn">Paper</button>
+      <button id="selectBtn3" onclick="selectChoice('scissors')" class="optBtn">Scissors</button>
+    </div>
+  </div>
+  <div class="mainBody" id="mBody">
+    <div class="leftPillar">
+
+    </div>
+    <div class="imgBox">
+      <div class="img">
+        <img src="../images/questionM.png" alt="first" id="userChoice">
+      </div>
+      <div class="img">
+        <h1>VS</h1>
+      </div>
+      <div class="img">
+        <img src="../images/questionM.png" alt="second" id="compChoice">
+      </div>
+    </div>
+    <div class="rightPillar">
+
+    </div>
+  </div>
+  <div class="hide" id="gameOverScreenOverlay">
+    <img src="../images/gameOver.jpg" alt="game over screen">
+  </div>
+</div>
+<div class="footer" id="footerId">
+  <div class="scores" id="scoreBox">
+    <div class="plyScore" id="pScore">
+      Player: 0
+    </div>
+    <div class="compScore" id="cScore">
+      Computer: 0
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<script src="game.js"></script>

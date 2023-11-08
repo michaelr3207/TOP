@@ -1,0 +1,84 @@
+.flex-container {
+     display: flex;
+}
+
+.container{
+    border: 5px solid darkkhaki;
+    padding: 10px;
+    background-color: blanchedalmond;
+
+}
+
+.container-2{
+    border: 5px solid lightcoral;
+    padding: 20px;
+    background-color: darkorange;
+
+}
+/* this selector selects all divs inside of .flex-container */
+.flex-container div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 60px;
+     flex: 1;
+    margin: 5px;
+}
+
+.two {
+    display: flex;
+}
+
+.two div{
+    background: peachpuff;
+    border: 1px solid deeppink;
+    flex: 1;
+    height: 30px;
+    margin: 0px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: underline;
+    width: 10%;
+
+}
+
+
+.two div p{
+    color: springgreen;
+    margin-bottom: 5px;
+    line-height: 5px;
+}
+
+.leftBox{
+    border: 5px solid mediumpurple;
+    margin-top: 20px;
+    height: 200px;
+    width: 50%;
+    margin-right: 5px;
+}
+
+.rightBox{
+    border: 3px solid red;
+
+    height: 90px;
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 22px;
+    flex: 1 1 auto;
+}
+
+.weird{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+
+.rightBoxSecond{
+    justify-content: center;
+    border: 3px solid red;
+    height: 90px;
+    margin-top: 130px;
+    flex: 1 1 auto;
+    width: 500px;
+    margin-right: 50px;
+}

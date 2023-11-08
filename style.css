@@ -1,0 +1,43 @@
+.svg-circle{
+    padding: 1000px;
+    margin-top: 50px;
+    color: red;
+    align-content: baseline;
+}
+
+.rect{
+    opacity: 10;
+}
+
+
+table, td, th {
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 4px 17px 5px rgba(255,21,21,0.98);
+    box-shadow: 1px 4px 17px 5px rgba(255,21,21,0.98);
+}
+
+.overflowing {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a {
+    text-decoration: underline;
+}
+
+/* This will apply to unvisited links */
+a:link {
+    color: blue;
+}
+
+/* And you guessed it, this applies to all links the user has clicked on */
+a:visited {
+    color: purple;
+}
+
+a:hover{
+    color: red;
+}
+

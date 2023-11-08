@@ -1,0 +1,124 @@
+<style>
+    body{
+        background: linear-gradient(222deg, rgba(12, 12, 12, 0.83), #05061a);
+    }
+
+    .mainBody{
+        background: #131313;
+        border: 5px solid #363535;
+        margin: auto;
+        height: 60%;
+        width: 17%;
+        margin-top: 100px;
+        border-radius: 20px;
+    }
+
+    .secondBody{
+
+    }
+
+    .block1, .block2{
+        height: 50%;
+        width: 100%;
+    }
+
+    .block1{
+        background: #0048ff;
+    }
+
+    .block2{
+        background: #E5E7EB;
+    }
+
+    .content{
+        /*border: 2px solid red;*/
+        position: absolute;
+        width: 15%;
+        height:55%;
+        margin-left: 22px;
+        top: 8em;
+        background: #f5f5f5;
+        border-radius: 3px;
+    }
+
+    .header{
+        height: 10%;
+        width: 80%;
+        /*border: 2px solid blueviolet;*/
+        margin: auto;
+        margin-top: 42px;
+        color: #0048ff;
+        text-align: center;
+        font-size: 40px;
+    }
+
+
+    .formBox{
+        /*border: 2px solid purple;*/
+        width: 80%;
+        height: 57%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    input{
+        display: block;
+        margin: auto;
+        height: 15%;
+        width: 100%;
+        font-size: 20px;
+        border: 0px solid red;
+        border-bottom: 1px solid grey;
+        background: #f5f5f5;
+        margin-top: 25px;
+    }
+
+    .btn{
+        background:#0048ff ;
+        font-size: 18px;
+        margin-left: 40px;
+        margin-top: 55px;
+        width: 80%;
+        height: 7%;
+        font-weight: bold;
+        color: #E5E7EB;
+
+    }
+    #emailBox{
+        margin-top: 10px;
+    }
+
+    input:focus{
+        outline: none;
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="mainBody">
+    <div class="block1">
+    </div>
+    <div class="block2">
+    </div>
+    <div class="content">
+        <div class="header">
+            Let's Get Started
+        </div>
+        <div class="formBox">
+            <input class="inputBox" type="text" id="nameBox" name="emailBox" placeholder="Name*">
+            <input class="inputBox" type="text" id="companyBox" name="emailBox" placeholder="Company*">
+            <input class="inputBox" type="text" id="emailBox" name="emailBox" placeholder="Email address">
+            <input class="inputBox" type="text" id="phoneBox" name="emailBox" placeholder="Phone">
+            <input class="inputBox" type="text" id="projectBox" name="emailBox" placeholder="Your Project...">
+        </div>
+        <button class="btn">GET IN TOUCH</button>
+    </div>
+</div>
+
+</body>
+</html>
+<Script src="form.js"></Script>

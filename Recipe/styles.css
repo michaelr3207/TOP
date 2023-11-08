@@ -1,0 +1,25 @@
+
+*{
+    background-color: aqua;
+}
+#container{
+    border: 10px solid red;
+    text-align: center;
+}
+
+h1{
+    border: 10px solid blue;
+    text-align: center;
+}
+
+a{
+    display: block;
+}
+
+.subsection.header{
+    text-decoration: underline;
+    padding: 100px;
+    border: 20px dashed deeppink;
+    margin-top: 309px;
+    border-radius: 25px;
+}

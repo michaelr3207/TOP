@@ -1,0 +1,312 @@
+<style>
+    @import url(https://db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse+Bold);
+    body{
+        background: #131313;
+    }
+
+    .mainBody{
+        /*border: 2px solid ghostwhite;*/
+        height: 77%;
+        width: 58%;
+        margin: auto;
+        margin-top: 150px;
+        display: flex;
+        background: seashell;
+    }
+
+    .imgBox{
+        /*border: 2px solid greenyellow;*/
+        width: 37%;
+        height: 100%;
+    }
+
+    .formBox{
+        /*border: 2px solid red;*/
+        width: 63%;
+        height: auto;
+    }
+
+    .imgHeader{
+        /*border: 2px solid yellow;*/
+        height: 12%;
+        width: 21%;
+        /*margin-top: 200px;*/
+        position: absolute;
+        bottom: 800px;
+        background-color: rgba(19, 19, 19, 0.5);
+        display: flex;
+    }
+
+    .imgBox img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .odinImage{
+        /*border: 2px solid red;*/
+        height: 90%;
+        width: 25%;
+        margin-left: 170px;
+    }
+
+    .odinTitle{
+        color: white;
+        font-size: 95px;
+        /*border: 2px solid yellow;*/
+        height: 90%;
+        width: 40%;
+        margin-right: 140px;
+        text-align: center;
+        font-family: "Norse Bold",cursive;
+        padding-top: 50px;
+        margin-top: -25px;
+    }
+
+    .imgBoxFooter{
+        /*border: 2px solid deeppink;*/
+        height: 3%;
+        width: 21%;
+        position: absolute;
+        bottom: 160px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        font-family: cursive;
+        text-decoration: underline;
+        padding-top: 3px;
+        color: rgba(253, 255, 255, 0.55);
+    }
+
+    .row1, .row3{
+        /*border: 2px solid turquoise;*/
+        height: 34.5%;
+        width: auto;
+        background: #E5E7EB;
+    }
+
+    .row2{
+        /*border: 2px solid darkgoldenrod;*/
+        height: 31.1%;
+        width: auto;
+        background: #ffffff;
+    }
+
+    .buttonContainer{
+        /*border: 2px solid darkblue;*/
+        width: 25%;
+        height: 15%;
+    }
+
+    .buttonContainer button{
+        width: 100%;
+        height: 100%;
+        margin-top: 33px;
+        margin-left: 40px;
+        border: 1px solid #596D48;
+        border-radius: 10px;
+        background: #596D48;
+        color: #E5E7EB;
+        font-family: "Comic Sans MS";
+        font-size: 18px;
+    }
+
+    .tinyMsg{
+        /*border: 2px solid orange;*/
+        height: 10%;
+        width: 50%;
+        margin-top: 55px;
+        margin-left: 40px;
+        font-size: 22px;
+        padding-top: 10px;
+    }
+
+    .spanner{
+        color: #596D48;
+    }
+
+    .spanner:hover{
+        text-decoration: underline;
+    }
+
+    .row2Header{
+        /*border: 2px solid purple;*/
+        height: 10%;
+        width: 24%;
+        text-align: center;
+        font-size: 23px;
+        margin-left: 20px;
+        padding-top: 30px;
+        font-family: Verdana;
+        text-decoration: black;
+    }
+
+    .formContainer{
+        /*border: 2px solid gold;*/
+        height: 62%;
+        width: 67%;
+        margin-left: 20px;
+        margin-top: 13px;
+        display: flex;
+    }
+
+    .formBoxOne, .formBoxTwo{
+        /*border: 2px solid firebrick;*/
+        height: 100%;
+        width: 50%;
+    }
+
+    .row2{
+        box-shadow: 0 8px 2px -2px rgba(0, 0, 0, 0.2);
+        margin-bottom: 2px;
+    }
+    .formBoxTwo{
+        margin-left: 10px;
+    }
+
+    .formRow input{
+        display: block;
+        width: 90%;
+        height: 18%;
+        border: 1px solid #c7c7c7;
+        border-radius: 6px;
+    }
+
+    .formRow{
+        font-size: 17px;
+    }
+
+    input:hover{
+        border: 2px solid #0f51c5;
+    }
+
+    input:focus{
+        outline: none !important;
+        border:1px solid #0f51c5;
+        /*box-shadow: 0 0 10px #719ECE;*/
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    }
+
+    .formRow{
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+
+
+    .firstLines{
+        /*border: 2px solid green;*/
+        height: 30%;
+        width: 75%;
+        margin-left: 45px;
+        font-size: 24.5px;
+        font-family: "Cambria Math";
+        padding-top: 170px;
+    }
+
+    .secondLine{
+        /*border: 2px solid green;*/
+        height: 10%;
+        width: 50%;
+        margin-left: 45px;
+        font-size: 24.5px;
+        font-family: "Cambria Math";
+        margin-top: -47px;
+    }
+
+    .thirdLine{
+        /*border: 2px solid green;*/
+        height: 10%;
+        width: 50%;
+        margin-left: 45px;
+        font-size: 24.5px;
+        font-family: "Cambria Math";
+        margin-top: 20px;
+        word-spacing: 3px;
+    }
+
+    .italic{
+        font-family: cursive;
+        font-style: italic;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sign up</title>
+</head>
+<body>
+<div class="mainBody">
+    <div class="imgBox">
+        <img src="../images/leaves.jpg" alt="leave this image">
+        <div class="imgHeader">
+            <div class="odinImage">
+                <img src="../images/odin.png" alt="odin image">
+            </div>
+            <div class="odinTitle">
+                ODIN
+            </div>
+        </div>
+        <div class="imgBoxFooter">
+            Copyright Michael Robinson
+        </div>
+    </div>
+    <div class="formBox">
+        <div class="row1">
+            <div class="firstLines">
+                <b>This is not a real online service! You know you need dsomething like this in your life to help you realise
+                your deepest dreans.</b>
+            </div>
+            <div class="secondLine">
+                <b>Sign up now to get started!</b>
+            </div>
+            <div class="thirdLine">
+                <b>You <span class="italic">know</span> you want to.</b>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="row2Header">
+                Let's do this!
+            </div>
+            <div class="formContainer">
+                <div class="formBoxOne">
+                    <div class="formRow">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                    <div class="formRow">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="formRow">
+                        <label for="pass">Password</label>
+                        <input type="text" id="pass" name="password">
+                    </div>
+                </div>
+                <div class="formBoxTwo">
+                    <div class="formRow">
+                        <label for="lname">Lastt Name</label>
+                        <input type="text" id="lname" name="firstname" >
+                    </div>
+                    <div class="formRow">
+                        <label for="pNumber">Phone Number</label>
+                        <input type="text" id="pNumber" name="phoneNo">
+                    </div>
+                    <div class="formRow">
+                        <label for="passC">Confirm Password</label>
+                        <input type="text" id="passC" name="passwordConfirm">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="buttonContainer">
+                <button>Create Account</button>
+            </div>
+            <div class="tinyMsg">
+                Have an account? <span class="spanner"><b>Log in</b></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

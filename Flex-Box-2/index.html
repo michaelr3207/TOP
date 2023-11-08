@@ -1,0 +1,124 @@
+
+<style>
+
+    .header{
+        border: 3px solid red;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header h1{
+        border: 3px solid gold;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .main{
+        border: 3px dashed black;
+        margin-top: 100px;
+        padding: 50px;
+    }
+
+    .leftBox{
+        /*border: 3px solid orange;*/
+        padding: 50px;
+        width: 50%;
+    }
+
+    .container{
+        /*border: 3px solid blue;*/
+        display: flex;
+    }
+
+    .rightbox{
+        /*border: 3px solid deeppink;*/
+        display: block;
+        padding: 30px;
+        width: 50%;
+    }
+
+    .rbox1{
+        border: 3px solid green;
+        padding: 20px;
+    }
+
+    .rbox2{
+        border: 3px solid green;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .rbox3{
+        border: 3px solid green;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .centreBox{
+        justify-content: center;
+        border: 3px solid darkorchid;
+        margin-top: 10px;
+        padding: 40px;
+    }
+    .centreBox p{
+        text-align: center;
+    }
+
+    .foot{
+        border: 3px solid green;
+        margin-top: 100px;
+        display: flex;
+    }
+    .message p{
+        text-align: center;
+        border: 2px solid darkblue;
+        border-radius: 10px;
+        width: 100%;
+
+    }
+
+    .message{
+      margin-left: 500px;
+    }
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box 2</title>
+</head>
+<body>
+<div class="header">
+    <h1>Header</h1>
+</div>
+
+<div class="main">
+    <div class="container">
+        <div class="leftBox">
+            <div class="centreBox">
+                <p>Hello</p>
+            </div>
+        </div>
+        <div class="rightbox">
+            <div class="rbox1">
+                <input>
+            </div>
+            <div class="rbox2">
+
+            </div>
+
+            <div class="rbox3">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="foot">
+    <div class="message">
+        <p>This is a footer</p>
+    </div>
+</div>
+</body>
+</html>
